@@ -1,0 +1,4 @@
+name: eyelash-corne
+
+build:
+  board_root: boards
