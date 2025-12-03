@@ -44,10 +44,10 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:keyboard-tab$$
   - {t: '$$mdi:backspace-reverse-outline$$', h: GAMING}
-  - {t: '$$mdi:keyboard-esc$$', h: SYSTEM}
-  - {t: '$$mdi:backspace$$', h: NUMBER}
-  - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
-  - {t: '$$mdi:keyboard-return$$', h: SYSTEM}
+  - {t: '$$mdi:keyboard-esc$$', h: COLEMAK}
+  - {t: '$$mdi:backspace$$', h: COLEMAK}
+  - {t: '$$mdi:keyboard-space$$', h: NUMBER}
+  - {t: '$$mdi:keyboard-return$$', h: COLEMAK}
   - {t: '$$mdi:keyboard-tab$$', h: LOWER}
   NUMBER:
   - F1
@@ -94,8 +94,8 @@ layers:
   - ^
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
-  - {t: '0', s: )}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '0', s: ), type: held}
   - {t: ',', s: <}
   - {t: ., s: '>'}
   SYMBOL:
@@ -144,7 +144,7 @@ layers:
   - '%'
   - ':'
   - {t: ;, s: ':'}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   SYSTEM:
@@ -191,10 +191,10 @@ layers:
   - END
   - '&studio_unlock'
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   COLEMAK:
   - {t: '`', s: '~'}
@@ -240,10 +240,10 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:keyboard-tab$$
   - {t: '$$mdi:backspace-reverse-outline$$', h: GAMING}
-  - {t: '$$mdi:keyboard-esc$$', h: SYSTEM}
-  - {t: '$$mdi:backspace$$', h: NUMBER}
-  - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
-  - {t: '$$mdi:keyboard-return$$', h: SYSTEM}
+  - {t: '$$mdi:keyboard-esc$$', h: COLEMAK, type: held}
+  - {t: '$$mdi:backspace$$', h: COLEMAK, type: held alternate}
+  - {t: '$$mdi:keyboard-space$$', h: NUMBER}
+  - {t: '$$mdi:keyboard-return$$', h: COLEMAK, type: held alternate}
   - {t: '$$mdi:keyboard-tab$$', h: LOWER}
   ENGRAM:
   - {t: '`', s: '~'}
@@ -289,10 +289,10 @@ layers:
   - P
   - $$mdi:keyboard-tab$$
   - {t: '$$mdi:backspace-reverse-outline$$', h: GAMING}
-  - {t: '$$mdi:keyboard-esc$$', h: SYSTEM}
-  - {t: '$$mdi:backspace$$', h: NUMBER}
-  - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
-  - {t: '$$mdi:keyboard-return$$', h: SYSTEM}
+  - {t: '$$mdi:keyboard-esc$$', h: COLEMAK}
+  - {t: '$$mdi:backspace$$', h: COLEMAK}
+  - {t: '$$mdi:keyboard-space$$', h: NUMBER}
+  - {t: '$$mdi:keyboard-return$$', h: COLEMAK}
   - {t: '$$mdi:keyboard-tab$$', h: LOWER}
   GAMING:
   - T
@@ -338,14 +338,14 @@ layers:
   - FF
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:keyboard-return$$', type: held}
-  - $$mdi:keyboard-esc$$
-  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-esc$$', type: held alternate}
+  - {t: '$$mdi:keyboard-space$$', type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   LOWER:
   - {t: QWERTY, h: toggle}
-  - {t: COLEMAK, h: toggle}
+  - {t: ENGRAM, h: toggle}
   - {t: ENGRAM, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -387,8 +387,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: GAMING, h: toggle}
-  - {t: SYSTEM, h: toggle}
+  - {t: COLEMAK, h: toggle, type: held alternate}
+  - {t: COLEMAK, h: toggle, type: held alternate}
   - {t: NUMBER, h: toggle}
-  - {t: SYMBOL, h: toggle}
-  - {t: SYSTEM, h: toggle}
+  - {t: COLEMAK, h: toggle, type: held alternate}
   - {type: held}
