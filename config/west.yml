@@ -2,18 +2,24 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-      # Additional modules containing boards/shields/custom code can be listed here as well.
-      # See:
-      # - https://zmk.dev/docs/features/modules
-      # - https://docs.zephyrproject.org/3.5.0/develop/west/manifest.html#projects
     - name: petejohanson
       url-base: https://github.com/petejohanson
     - name: crizzy9
       url-base: http://github.com/crizzy9
+    - name: eyelash
+      url-base: https://github.com/habibimd
+
   projects:
     - name: zmk
       remote: petejohanson
       revision: feat/pointers-with-input-processors
       import: app/west.yml
+
+    # Add your repo as a ZMK module
+    - name: eyelash-corne
+      remote: eyelash
+      revision: main
+      path: modules/eyelash-corne
+
   self:
     path: config
